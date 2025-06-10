@@ -115,7 +115,7 @@ public class BuilgenAction implements IEditorActionDelegate {
       // users should be advised to add the 'final' keyword to fields manually.
       
       // Format the generated code
-      String source = CodeFormatterUtil.format(classFile.getSource());
+      String source = CodeFormatterUtil.format(compilationUnit.getSource());
       compilationUnit.getBuffer().setContents(source);
       compilationUnit.save(null, true);
 
